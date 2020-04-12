@@ -19,8 +19,14 @@ get '/FAQ' do
 end
 
 get '/something' do
-  @title = 'Some content'
-  @message = 'Something else'
+  under_construction
+
+  erb :message
+end
+
+def under_construction
+  @title = 'Under construction'
+  @message = 'This page is under construction'
 
   erb :message
 end
